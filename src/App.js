@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import './App.css'
 import Counter from './Counter'
 import InputWithAutoFocus from './InputWithAutoFocus'
-
+import ShowWindowWidth from './ShowWindowWidth'
 // import Home from './pages/Home'
 // import SearchResults from './pages/SearchResults'
 
@@ -133,6 +133,10 @@ export default function App() {
       <Counter initialCount={100} />
       <hr />
       <InputWithAutoFocus />
+      <hr />
+      <ShowWindowWidth />
+      <hr />
+      <ShowWindowWidth />
     </div>
   )
 }

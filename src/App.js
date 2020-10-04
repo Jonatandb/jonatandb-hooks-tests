@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 // import { Route, Link } from 'wouter'
 import './App.css'
+import Counter from './Counter'
+
 // import Home from './pages/Home'
 // import SearchResults from './pages/SearchResults'
 
@@ -111,9 +113,7 @@ export default function App() {
     { id: 2, name: 'Sponwate' },
   ])
   console.log('**********  Renderizando App *************')
-  alert(
-    'Verificar por qué FriendStatus no se actualiza cuando cambia el estado de mi hook useFriendStatus()'
-  )
+  //  alert(    'Verificar por qué FriendStatus no se actualiza cuando cambia el estado de mi hook useFriendStatus()'  )
   return (
     <div>
       {friends.map(friend => {
@@ -128,6 +128,8 @@ export default function App() {
           </div>
         )
       })}
+      <hr />
+      <Counter initialCount={100} />
     </div>
   )
 }

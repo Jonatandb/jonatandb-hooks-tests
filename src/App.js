@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 // import { Route, Link } from 'wouter'
 import './App.css'
 import Counter from './Counter'
+import InputWithAutoFocus from './InputWithAutoFocus'
 
 // import Home from './pages/Home'
 // import SearchResults from './pages/SearchResults'
@@ -130,6 +131,8 @@ export default function App() {
       })}
       <hr />
       <Counter initialCount={100} />
+      <hr />
+      <InputWithAutoFocus />
     </div>
   )
 }

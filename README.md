@@ -13,7 +13,7 @@
 ---
 
 <p align="center">
-    <a href="https://github.com/Jonatandb/jonatandb-hooks-tests">
+    <a href="https://jonatandb-hooks-tests.netlify.app/" target="_blank" rel="noreferrer noopener">
         <img src="jonatandb-hooks-tests.gif" alt="jonatandb-hooks-tests - Hecho con ❤ por Jonatandb!"/>
     </a>
 </p>

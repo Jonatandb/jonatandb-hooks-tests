@@ -19,19 +19,23 @@ const reducer = (state, action) => {
   }
 }
 
-export default function Counter({ initialCount }) {
+const Counter = ({ initialCount = 0 }) => {
   const [state, dispatch] = useReducer(reducer, initialCount, init)
-  console.log('Counter render()')
   return (
-    <div style={{ border: '1px solid green', maxWidth: '200px', padding: '10px' }}>
-      {state.count}
-      <button onClick={() => dispatch({ type: 'reset', payload: initialCount })}>Reset</button>
-      <button onClick={() => dispatch({ type: 'increment' })}>+</button>
-      <button onClick={() => dispatch({ type: 'decrement' })}>-</button>
-      <button onClick={() => dispatch({ type: 'same' })}>=</button>
-    </div>
+    <>
+      <h3>- Counter using useReducer():</h3>
+      <div style={{ maxWidth: '200px', padding: '10px', margin: '20px' }} title='Counter using useReducer()'>
+        <span style={{ padding: '20px 20px 20px 0' }}>{state.count}</span>
+        <button onClick={() => dispatch({ type: 'increment' })}>+</button>
+        <button onClick={() => dispatch({ type: 'decrement' })}>-</button>
+        <button onClick={() => dispatch({ type: 'same' })}>=</button>
+        <button onClick={() => dispatch({ type: 'reset', payload: initialCount })}>Reset</button>
+      </div>
+    </>
   )
 }
+
+export default Counter
 
 // Sin useReducer():
 // export default function Counter({ initialCount }) {

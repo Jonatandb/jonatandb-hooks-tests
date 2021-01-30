@@ -1,8 +1,28 @@
+## Just a few tests with React hooks by Jonatandb
+
+- Collapse to hide content -> using useState() hook.
+- Counter -> using useReducer() hook.
+- InputWithAutoFocus -> using useRef() hook.
+- ShowWindowWith -> using custom hook.
+- Connection status detection simulation -> using custom hooks (more info in console).
+
+#### Image to data URI (To create favicon by using png file):
+
+- https://ezgif.com/image-to-datauri/ezgif-5-76c842c65482.png
+
+---
+
+<p align="center">
+    <a href="https://github.com/Jonatandb/jonatandb-hooks-tests">
+        <img src="jonatandb-hooks-tests.gif" alt="jonatandb-hooks-tests - Hecho con ❤ por Jonatandb!"/>
+    </a>
+</p>
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
-In the project directory, you can run:
+### In the project directory, you can run:
 
 ### `yarn start`
 

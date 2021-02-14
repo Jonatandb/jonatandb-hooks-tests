@@ -5,6 +5,7 @@ import FriendItem from './components/FriendItem'
 import FriendStatus from './components/FriendStatus'
 import InputWithAutoFocus from './components/InputWithAutoFocus'
 import ShowWindowWidth from './components/ShowWindowWidth'
+import TodoList from './components/TodoList'
 
 const friends = [
   { id: 1, name: 'Jonatandb' },
@@ -27,8 +28,8 @@ export default function App() {
         <ShowWindowWidth />
       </Collapse>
 
-      <Collapse collapsedTitle={`Click to show ${friends[0].name} conection status`}>
-        <h3>- Connection status detection - Simulation using useFriendStatus() custom hook:</h3>
+      <Collapse collapsedTitle="Connection status detection - Simulation using useFriendStatus() custom hook.">
+        <h3>- {friends[0].name} conection status:</h3>
         <div style={{ padding: '10px', margin: '20px', padingLeft: '20px', display: 'flex', flexDirection: 'row' }}>
           <FriendItem friend={friends[0]} />
           <FriendStatus friend={friends[0]} style={{ marginLeft: '10px' }} />
@@ -39,6 +40,10 @@ export default function App() {
             <FriendStatus friend={friends[1]} style={{ marginLeft: '10px' }} />
           </div>
         </Collapse>
+      </Collapse>
+
+      <Collapse collapsedTitle={`TodoList using useLocalStorage() custom hook.`}>
+        <TodoList />
       </Collapse>
     </div>
   )

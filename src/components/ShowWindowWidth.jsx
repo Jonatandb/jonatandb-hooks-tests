@@ -5,7 +5,7 @@ const ShowWindowWidth = () => {
   const width = useWindowWidth()
 
   return <>
-    <h3>- Detect window width and on-resizing using useWindowWidth() custom hook:</h3>
+    <h3>- Detects window width and on-resizing using useWindowWidth() custom hook:</h3>
     <div style={{ maxWidth: '200px', padding: '10px', margin: '20px' }} title='Detect window width and on-resizing using custom hook'>
       <div style={{ margin: '5px', maxWidth: '200px' }}>
         Window width: {width}

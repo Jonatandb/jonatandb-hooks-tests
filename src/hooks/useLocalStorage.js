@@ -18,7 +18,7 @@ const useLocalStorage = (key, defaultValue, callback) => {
 
         window.localStorage.setItem(key, JSON.stringify(storage))
 
-    }, [storage])
+    }, [storage, key])
 
     return [storage, setStorage]
 }

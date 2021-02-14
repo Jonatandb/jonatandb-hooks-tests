@@ -6,6 +6,7 @@
 - ShowWindowWith -> using custom hook.
 - Connection status detection simulation -> using custom hooks (more info in console).
 - TodoList using useLocalStorage() custom hook.
+- UpdatePageTitle -> using useDocumentTitle() custom hook.
 
 #### Image to data URI (To create favicon by using png file):
 

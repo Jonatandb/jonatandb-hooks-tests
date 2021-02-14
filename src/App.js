@@ -6,6 +6,7 @@ import FriendStatus from './components/FriendStatus'
 import InputWithAutoFocus from './components/InputWithAutoFocus'
 import ShowWindowWidth from './components/ShowWindowWidth'
 import TodoList from './components/TodoList'
+import UpdatePageTitle from './components/UpdatePageTitle'
 
 const friends = [
   { id: 1, name: 'Jonatandb' },
@@ -44,6 +45,10 @@ export default function App() {
 
       <Collapse collapsedTitle={`TodoList using useLocalStorage() custom hook.`}>
         <TodoList />
+      </Collapse>
+
+      <Collapse collapsedTitle={`Set page title using useDocumentTitle() custom hook.`}>
+        <UpdatePageTitle />
       </Collapse>
     </div>
   )

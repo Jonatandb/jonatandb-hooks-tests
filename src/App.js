@@ -16,7 +16,7 @@ const friends = [
 
 export default function App() {
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', margin: '20px 20px' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', margin: '20px auto', maxWidth: '70%' }}>
 
       <Collapse collapsedTitle={`Counter -> using useReducer().`}>
         <Counter initialCount={100} />

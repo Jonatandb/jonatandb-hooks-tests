@@ -10,15 +10,7 @@ function TodoList() {
 
     const handleSubmit = e => {
         e.preventDefault()
-        setTodos(prevTodos => {
-            return [
-                ...prevTodos,
-                {
-                    id: Date.now(),
-                    text
-                }
-            ]
-        })
+        setTodos(prevTodos => prevTodos.concat({ id: Date.now(), text }))
         inputRef.current.value = ""
         inputRef.current.focus()
     }

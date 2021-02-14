@@ -4,6 +4,7 @@ import Counter from './components/Counter'
 import FriendItem from './components/FriendItem'
 import FriendStatus from './components/FriendStatus'
 import InputWithAutoFocus from './components/InputWithAutoFocus'
+import KeyDownRevealer from './components/KeyDownRevealer'
 import ShowWindowWidth from './components/ShowWindowWidth'
 import TodoList from './components/TodoList'
 import UpdatePageTitle from './components/UpdatePageTitle'
@@ -50,6 +51,11 @@ export default function App() {
       <Collapse collapsedTitle={`Set page title using useDocumentTitle() custom hook.`}>
         <UpdatePageTitle />
       </Collapse>
+
+      <Collapse collapsedTitle={`Detect keydown using useKeyDown() custom hook.`}>
+        <KeyDownRevealer />
+      </Collapse>
+
     </div>
   )
 }

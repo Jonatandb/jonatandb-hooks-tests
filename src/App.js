@@ -23,12 +23,12 @@ export default function App() {
         <InputWithAutoFocus />
       </Collapse>
 
-      <Collapse collapsedTitle={`ShowWindowWith -> using custom hook.`}>
+      <Collapse collapsedTitle={`ShowWindowWith -> using useWindowWidth() custom hook.`}>
         <ShowWindowWidth />
       </Collapse>
 
       <Collapse collapsedTitle={`Click to show ${friends[0].name} conection status`}>
-        <h3>- Connection status detection - Simulation using custom hooks:</h3>
+        <h3>- Connection status detection - Simulation using useFriendStatus() custom hook:</h3>
         <div style={{ padding: '10px', margin: '20px', padingLeft: '20px', display: 'flex', flexDirection: 'row' }}>
           <FriendItem friend={friends[0]} />
           <FriendStatus friend={friends[0]} style={{ marginLeft: '10px' }} />

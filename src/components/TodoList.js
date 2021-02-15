@@ -21,7 +21,7 @@ function TodoList() {
             <form onSubmit={handleSubmit}>
                 <input ref={inputRef} type="text" placeholder="Tengo que..." onChange={e => setText(e.target.value)} />
             </form>
-            <h3>Pendientes: {todos.length}</h3>
+            <h3>Pending: {todos.length}</h3>
             <ul>
                 {todos.map(todo => <li key={todo.id}>{todo.text}</li>)}
             </ul>

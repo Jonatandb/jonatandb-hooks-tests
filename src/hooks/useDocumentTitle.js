@@ -1,15 +1,9 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 
-const useDocumentTitle = () => {
-    const [title, setTitle] = useState()
-
+const useDocumentTitle = (title) => {
     useEffect(() => {
-
         document.title = (title ? title + " - " : "") + "Jonatandb React Hooks Tests"
-
     }, [title])
-
-    return setTitle
 }
 
 export default useDocumentTitle
